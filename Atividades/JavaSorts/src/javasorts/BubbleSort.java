@@ -33,11 +33,12 @@ public class BubbleSort {
 
 //------------------------------------------------------------------------------
 
-    public static void bSortComentado(int array []){
-        boolean troca;
-        do{
-            troca = false;
+   public static void bSortComentado(int array []){
         Scanner scanner = new Scanner(System.in);
+       boolean troca;
+        do{
+                  
+        troca = false;
         for (int fase=1;fase<array.length;fase++){
             System.out.println("Fase"+fase);//
             JavaSorts.printArray(array);//
