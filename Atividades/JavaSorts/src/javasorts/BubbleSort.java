@@ -15,20 +15,23 @@ public class BubbleSort {
    
     public static void bSort2 (int array[]){
        boolean troca;
-       do{
+     
            troca = false;
         for (int fase=1;fase<array.length;fase++){
             for (int comp=0;comp<array.length-fase;comp++){   
                 if (array[comp]>array[comp+1]){
-                    troca = true;
                     int temp = array[comp];
                     array[comp] = array[comp+1];
                     array[comp+1] = temp;
+                    troca = true;
            }//fim do if
         }//fim for comp
-    }//fim for fase
- } while(troca); 
-    } // fim bsort2
+           if (!troca){
+               break;
+            }  //fim do if troca5
+           
+        }//fim for fase
+} // fim bsort2
 
 
 //------------------------------------------------------------------------------
@@ -36,7 +39,7 @@ public class BubbleSort {
    public static void bSortComentado(int array []){
         Scanner scanner = new Scanner(System.in);
        boolean troca;
-        do{
+        
                   
         troca = false;
         for (int fase=1;fase<array.length;fase++){
@@ -47,15 +50,17 @@ public class BubbleSort {
                 System.out.println("Comparando "+array[comp]+" com " + array[comp+1]);
                 if (array[comp]>array[comp+1]){
                     System.out.println(" Trocou "); //
-                    troca = true;
                     int temp = array[comp];
                     array[comp] = array[comp+1];
                     array[comp+1] = temp;
+                    troca = true;
            }//fim do if
         }//fim for comp.
+            if (!troca){
+            break ; }
     }//fim for fase
         
- }while (troca);
+ 
     }            
  //------------------------------------------------------------------------------
     
