@@ -35,15 +35,15 @@ public class JavaSorts {
         System.out.println("Vetor original:");
         printArray(vetor);
         System.out.println("");
+           
+        BubbleSort.bSortComentado(vetor);
+        System.out.println("Vetor ordenado");
+        printArray(vetor);  
+        System.out.println("");
         
         BubbleSort.bSortDecrescente(vetor2);
         System.out.println("Vetor decrescente ordenado ");
         printArray(vetor2); 
-        System.out.println("");
-        
-        BubbleSort.bSortComentado(vetor);
-        System.out.println("Vetor ordenado");
-        printArray(vetor);  
         System.out.println("");
         
     }// fim main
