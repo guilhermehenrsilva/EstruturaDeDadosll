@@ -47,12 +47,17 @@ public class JavaSorts {
         printArray(vetor);
         System.out.println("");
         
-        SeletionSort.sSortComentado(vetor);
+        InsertionSort.iSortComentado(vetor);
+        System.out.println("Vetor ordenado");
+        printArray(vetor);  
+        System.out.println(""); 
+        
+     /* SeletionSort.sSortComentado(vetor);
         System.out.println("Vetor ordenado");
         printArray(vetor);  
         System.out.println(""); 
            
-       /*/BubbleSort.bSortComentado(vetor);
+        BubbleSort.bSortComentado(vetor);
         System.out.println("Vetor ordenado");
         printArray(vetor);  
         System.out.println(""); 
@@ -60,7 +65,7 @@ public class JavaSorts {
         BubbleSort.bSortDecrescente(vetor2);
         System.out.println("Vetor decrescente ordenado ");
         printArray(vetor2); 
-        System.out.println("");*/
+        System.out.println("");       */
         
     }// fim main
 
