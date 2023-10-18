@@ -10,12 +10,22 @@ package javatreesaula;
  * @author guilh
  */
 public class JavaTreesAula {
+public static void main(String[] args) {
+BinarySearchTree tree = new BinarySearchTree();
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+ tree.add(new Aluno(30,"Athos"));
+ tree.add(new Aluno(50,"Ryan"));
+ tree.add(new Aluno(40,"Luiz"));
+ tree.add(new Aluno(45,"Sabrina"));
+ tree.add(new Aluno(15,"Andre"));
+
+ 
+    System.out.println("pre Ordem");
+    //tree.inOrder();
     
+ 
+ //tree.postOrder();
 }
+
+ }
+   
